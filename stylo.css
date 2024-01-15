@@ -262,12 +262,17 @@ section.final .flex{
 }
 
 .rodape{
-    background-color: #02551e;
+    background-color: #044811;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
   
+}
+
+.rodape a{
+    color: #fff;
+    text-decoration: none;
 }
 
 h5{
@@ -440,7 +445,13 @@ form .btn-enviar input[type=submit]:hover{
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 420px){
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
 
     /*Classes-gerais*/
     .flex{
