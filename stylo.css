@@ -440,7 +440,7 @@ form .btn-enviar input[type=submit]:hover{
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 420px){
 
     /*Classes-gerais*/
     .flex{
