@@ -77,7 +77,7 @@ header .btn-contato button:hover{
 
 /*topo do site*/
 
-.section{
+section.topo-site{
     padding: 40px 4%;
 }
 
@@ -86,7 +86,7 @@ header .btn-contato button:hover{
 }
 
 
-section .topo-img img{
+.topo-site .topo-img img{
     width: 320px;
     height: 480px; 
 }
@@ -115,6 +115,7 @@ section.topo-site .flex{
 }
 
 .topo-site .topo-esquerdo p{
+    width: 800px;
     margin: 40px 0;
     text-align: justify;
 }
@@ -144,8 +145,6 @@ section.topo-site .flex{
     overflow: hidden;
    
 }
-
-
 
 .bote::before{
     content: '';
@@ -439,4 +438,159 @@ form .btn-enviar input[type=submit]{
 form .btn-enviar input[type=submit]:hover{
     box-shadow: 0px 0px 0px #058409;
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 1200px){
+
+    /*Classes-gerais*/
+    .flex{
+       flex-direction: column-reverse; 
+    }
+
+    h2.titulo{
+        font-size: 24px;
+        font-weight: 30px;
+        margin-left: -900px;
+    }
+
+
+    /*menu*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+
+    /*topo-site*/
+
+    section.topo-site{
+    padding: 10px 2%;
+   }
+
+    .topo-site h1{
+    font-size: 25px;
+    margin-left: -640px;
+    
+    
+}
+
+.topo-esquerdo{
+    margin-left: none;
+   
+}
+
+section.topo-site .flex{
+    align-items: none;
+    justify-content:none;
+    gap:90px;
+    
+}
+
+.topo-site .topo-esquerdo h1 span{
+   margin-left: -240px;
+    font-size: 25px;
+    stroke: none;
+}
+
+.topo-site .topo-img img{
+    width: 220px;
+    height: 480px; 
+    margin-left: -580px;
+}
+
+.topo-site .topo-esquerdo p{
+    width: 350px;
+    margin: none;
+    margin-left: -640px;
+    text-align: justify;
+}
+
+.bote{
+   margin-left: -580px;
+   
+}
+
+p{
+    width: 250px;
+}
+
+
+/*Final*/
+
+section.final{
+    padding: 40px 4%;
+    margin-bottom: 50px;
+
+}
+
+section.final .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.final .txt-final h2{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin-left: -580px;
+}
+
+.final .txt-final h2 span{
+    color: #058409;
+    display: block;
+}
+
+.final .txt-final p{
+    margin: 20px 0;
+    text-align: justify;
+    margin-left: -580px;
+}
+
+.final .txt-final .social-midia button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 25px;
+    cursor: pointer;
+    margin:none;
+    transition: .2s;
+  
+    
+   
+    
+}
+
+.txt-final .social-midia button:hover{
+    box-shadow: 0px 0px 15px #04c00a;
+    transform: scale(1.05);
+}
+
+.final .txt-final .social-midia{
+    margin-left: -620px;
+}
+
+.img-final{
+    margin-left: -910px;
+}
+
+.rodape{
+    background-color: #02551e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: -80px;
+  
+}
+
+h5{
+    font-size: 8pt;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+}
+
+    
 }
